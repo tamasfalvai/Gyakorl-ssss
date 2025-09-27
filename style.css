@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Monsieur+La+Doulaise&family=Roboto+Slab:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d5bdaf;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background: #f5ebe0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    text-align: center;
+    background: #f5ebe0;
+    padding: 30px 0;
+}
+header img {
+    width: 10%;
+    height: auto;
+}
+
+#the {
+    font-family: "Ballet", cursive;
+}
+
+.szovge {
+    color: #4a0a0a;
+}
+
+#pé {
+    font-size: 13px;
+}
+
+/* First div */
+#firstdiv {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    background: #d6ccc2;
+}
+#firstdiv img {
+    width: 25%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Article */
+#article1 {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    background: #d6ccc2;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* Main divs */
+#maindiv {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 10px;
+}
+
+.divs {
+    flex: 1 1 300px;
+    max-width: 300px;
+    border: 1px solid #4a0a0a;
+}
+
+.másszín {
+    background: #d6ccc2;
+}
+
+.divsimgs {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+#picture3 {
+    border-radius: 50px;
+}
+
+.divsp {
+    line-height: 25px;
+}
+
+/* ======== MEDIA QUERY ======== */
+@media (max-width: 768px) {
+    /* Header marad sorban, csak kisebb */
+    header {
+        padding: 15px 10px;
+    }
+    header img {
+        max-width: 60px;
+    }
+    #d h1, #d h2, #d p {
+        font-size: 0.9rem;
+    }
+
+    /* First div alá törik */
+    #firstdiv {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px;
+    }
+
+    /* Article */
+    #article1 {
+        flex-direction: column;
+        padding-left: 0;
+        height: auto;
+    }
+
+    /* Main divs alá törnek */
+    .divs {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Képek rugalmasak */
+    .divsimgs {
+        max-width: 100%;
+    }
+}
+
+
+
+input{
+    background: #4a0a0a;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.divek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    max-width: 400px;
+}
+
+.divekek {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 150px;
+}
+
+
+
+#kiválaszt{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* valaminek a gyereke (3) lesz .... */
+.divekek:nth-child(3){
+    background: #ff0000;
+}
+
+
+main p:nth-child(2) {
+    font-size: 32px;
+}
+
+.divekek:nth-child(5){
+    background: #085a0b;
+    position: absolute;
+    left: 0;
+    
+
+}
